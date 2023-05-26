@@ -8,7 +8,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
 
 function App () {
-
+  console.log( "hello" );
   const [ user, setuser ] = useState( '' )
 
   onAuthStateChanged( auth, ( user ) => {
